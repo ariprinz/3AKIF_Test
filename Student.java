@@ -2,20 +2,20 @@ public class Student
 {
     private String name;
     private int alter;
-    private boolean mannlich;
+    private boolean weiblich;
 
     public Student()
     {
         setName("Thomas");
         setAlter(40);
-        setMannlich(true);
+        setWeiblich(true);
     }
 
-    public Student(String name, int alter, boolean mannlich)
+    public Student(String name, int alter, boolean weiblich)
     {
         setName(name);
         setAlter(alter);
-        setMannlich(mannlich);
+        setWeiblich(weiblich);
     }
 
     public void setName(String name)
@@ -28,9 +28,9 @@ public class Student
         this.alter = alter;
     }
 
-    public void setMannlich(boolean mannlich)
+    public void setWeiblich(boolean weiblich)
     {
-        this.mannlich = mannlich;
+        this.weiblich = weiblich;
     }
 
     public String getName()
@@ -43,13 +43,13 @@ public class Student
         return alter;
     }
 
-    public boolean getMannlich()
+    public boolean getWeiblich()
     {
-        return mannlich;
+        return weiblich;
     }
 
     public void printStudent()
     {
-        System.out.println("Student:\t" + name + "\t" + alter + "\t" + mannlich);
+        System.out.println("Student:\t" + name + "\t" + alter + "\t" + weiblich);
     }
 }
